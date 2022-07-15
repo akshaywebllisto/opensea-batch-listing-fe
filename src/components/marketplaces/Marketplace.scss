@@ -1,0 +1,96 @@
+.Marketplace {
+  padding: 20px;
+  background-image: linear-gradient(293deg, #24262b, #292c30);
+  box-shadow: 10px 10px 26px #00000059;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.8;
+  .marketplace_wrp {
+    width: 100%;
+  }
+  p {
+    color: #eaeaea;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Rubik, Medium;
+  }
+  .nft_marketplace {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .select_marketplace {
+      width: 84%;
+      span {
+        font-size: 15px;
+        font-weight: 500;
+        color: #9e9e9e;
+      }
+      .marketplace_network {
+        display: flex;
+        margin-top: 15px;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 110px;
+          background-color: #545558;
+          padding: 3px 3px;
+          margin-right: 20px;
+          border-radius: 30px;
+          text-align: center;
+          color: #ffffff;
+          font-size: 0.8rem;
+          cursor: pointer;
+          border: #545558 2px solid;
+
+          img {
+            margin-left: 15px;
+            width: 20px;
+          }
+        }
+      }
+      .marketplace_network_hover {
+        border: #9e9e9e 2px solid !important;
+      }
+    }
+    .duration {
+      width: 17%;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      .days_dropdown {
+        padding: 10px;
+      }
+      button {
+        width: 110px;
+        background-color: #545558;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 30px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-weight: 800;
+        cursor: pointer;
+        border: none;
+        &:focus {
+          color: #fff;
+          background-color: none;
+          border-color: none;
+          box-shadow: none;
+        }
+      }
+      span {
+        // margin-left: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #9e9e9e;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

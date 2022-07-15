@@ -1,0 +1,157 @@
+.CardListing::-webkit-scrollbar {
+  width: 0px;
+  // height: 10px;
+}
+.CardListing::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.CardListing::-webkit-scrollbar-thumb {
+  background-color: rgb(189, 89, 89);
+  // outline: 1px solid slategrey;
+}
+.listing_card_listed_heading {
+  font-size: 11px;
+  padding: 4px;
+  background: #7c7676;
+  color: #fff;
+  position: absolute;
+  border-radius: 9px;
+  top: 6px;
+  left: 5px;
+}
+.CardListing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow-y: scroll;
+
+  .Card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 75vh;
+
+    .listing_card {
+      width: 205px;
+      height: 229px;
+      background-image: linear-gradient(336deg, #24262b, #292c30);
+      box-shadow: 10px 10px 26px rgb(0 0 0 / 35%);
+      margin-bottom: 20px;
+      border-radius: 24px;
+      position: relative;
+
+      input {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        border: none;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+      }
+      img {
+        width: 205px;
+        height: 162px;
+        border-radius: 30px 30px 0px 0px;
+      }
+
+      .card_details {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        span {
+          color: #9e9e9e;
+          font-size: 0.8rem;
+        }
+        p {
+          color: #eaeaea;
+          font-size: 0.8rem;
+        }
+        button {
+          border: none;
+          font-size: 10px;
+          height: 23px;
+          background-color: #727171;
+          border-radius: 30px;
+          width: 40px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  // checkbox style
+  .listingcard_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .listingcard_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 13px;
+    right: 17px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: rgb(116 116 116 / 40%);
+  }
+
+  /* On mouse-over, add a grey background color */
+  .listingcard_checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .listingcard_checkbox input:checked ~ .checkmark {
+    background-color: #f10027;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .listingcard_checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .listingcard_checkbox .checkmark:after {
+    // left: 9px;
+    // top: 5px;
+    // width: 5px;
+    // height: 10px;
+    // border: solid white;
+    // border-width: 0 3px 3px 0;
+    // -webkit-transform: rotate(45deg);
+    // -ms-transform: rotate(45deg);
+    // transform: rotate(45deg);
+    background-image: url(../../assets/checkedicon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px 10px;
+    width: 16px;
+    height: 15px;
+  }
+}

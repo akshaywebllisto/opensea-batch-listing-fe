@@ -1,0 +1,28 @@
+@font-face {
+  font-family: EBGaramond;
+  src: url(./assets/font/EB_Garamond/EBGaramond-SemiBold.ttf);
+}
+
+.app_wrap{
+ 
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-image: url("./assets/Rectangle1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Rubik", sans-serif;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,183 @@
+.Listing {
+  margin-top: 40px;
+  background-image: linear-gradient(305deg, #24262b, #292c30);
+  box-shadow: 10px 10px 26px #00000059;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  // opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .listing_wrp {
+    width: 100%;
+    margin: 30px 0;
+    max-height: 280px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+    p {
+      margin-left: 24px;
+      color: #eaeaea !important;
+      font-size: 18px;
+      font-weight: 800;
+      font-family: Rubik, Medium;
+    }
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    tr {
+      border: unset;
+    }
+    tr {
+      font-size: 13px;
+      padding-top: 10px;
+    }
+    .listing_table {
+      color: #9e9e9e !important;
+      padding: 20px !important;
+      vertical-align: middle !important;
+      margin-bottom: 0px;
+      padding: 10px !important;
+
+      .table_row_market_heading {
+        padding-left: 24px;
+      }
+      .table_row_delete_heading {
+        padding-right: 24px;
+      }
+      .table_headings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white !important;
+      }
+
+      .items_body_details {
+        .items_details {
+          border-top: 1px solid #797878;
+          .table_market_icon {
+            padding-left: 24px;
+            img {
+              padding: 10px;
+              height: 43px;
+            }
+          }
+          .table_nft_name_img {
+            div {
+              display: flex;
+              justify-content: flex-start;
+              img {
+                width: 39px;
+                height: 39px;
+                border-radius: 10px;
+              }
+              div {
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+
+                .heading_1 {
+                  color: #eaeaea;
+                  font-weight: 400;
+                  margin-bottom: 3px;
+                }
+                .heading_2 {
+                  color: #9e9e9e;
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+          .table_nft_last_price {
+            div {
+              text-align: center;
+              img {
+                margin-left: 4px;
+                width: 7px;
+              }
+            }
+          }
+          .table_nft_price {
+            .table_nft_price_wrap {
+              background-color: rgba(216, 216, 216, 0.1490196078);
+              border-radius: 30px;
+              height: 33px;
+              width: 116px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              input {
+                background: transparent;
+                color: #fff;
+                border: none;
+                outline: none;
+                width: 60%;
+              }
+              .price_eth {
+                color: #ffffff;
+                font-size: 11px;
+                font-weight: 500;
+                display: inline-block;
+                img {
+                  width: 7px;
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+          .table_nft_market_fees {
+            .marketplace_fees {
+              display: flex;
+              justify-content: center;
+              .marketplace_fees_price {
+                margin-left: 10px;
+                div {
+                  img {
+                    margin-left: 3px;
+                  }
+                }
+              }
+              .marketplace_grow {
+                color: #09c403 !important;
+                font-weight: 500;
+              }
+            }
+          }
+          .table_nft_royalties {
+            .marketplace_fees {
+              display: flex;
+              flex-direction: row;
+              .marketplace_royalties {
+                color: #09c403 !important;
+                font-weight: 500;
+              }
+            }
+            .marketplace_fees_price {
+              margin-left: 6px;
+              img {
+                margin-left: 3px;
+              }
+            }
+          }
+          .table_nft_delete_btn {
+            padding-right: 24px;
+            img {
+              width: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// .Listing .listing_wrp span {
+//     font-family: Rubik, Medium;
+//     font-size: .8rem;
+//     margin-left: 10px;
+// }
